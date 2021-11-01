@@ -31,3 +31,22 @@ function even(number){
 }
 console.log(even(getRandomInt(60)));
 
+// 2.
+function  getCurrencySymbolFromCode(currency){
+if(currency=='USD'){
+  return '$';
+} else if (currency== 'EUR'){
+  return '€';
+}else if (currency=='GEL'){
+  return 'ლ';
+}
+}
+console.log(getCurrencySymbolFromCode('USD'));
+
+// 5.
+const petsFavToy = (name, favToy) =>` ${name}'s favourite toy is a ${favToy}`
+const cat= petsFavToy('kote', 'bird');
+
+console.log(cat);
+
+
