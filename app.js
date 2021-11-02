@@ -4,9 +4,9 @@ console.log(sentence.toLowerCase());
 
 // 4.
  numArray=[1,2,3,4,5,6,7,8];
-for (i=0;i<50;i++){
+
   console.log(i);
-}
+
 console.log(numArray.filter((even) => even%2===0));
 // console.log(numArray.filter((odd)=> odd % 2 !==0));
 
@@ -44,9 +44,11 @@ if(currency=='USD'){
 console.log(getCurrencySymbolFromCode('USD'));
 
 // 5.
-const petsFavToy = (name, favToy) =>` ${name}'s favourite toy is a ${favToy}`
-const cat= petsFavToy('kote', 'bird');
+// const petsFavToy = (name, favToy) =>` ${name}'s favourite toy is a ${favToy}`
+// const cat= petsFavToy('kote', 'bird');
 
-console.log(cat);
+// console.log(cat);
+const objectArray=[{name:'gio'}, {name:'natia'},{name:'milana'}]
+console.log(getUserByName(objectArray,'natia'));
 
 
