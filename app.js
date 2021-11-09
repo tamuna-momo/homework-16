@@ -4,8 +4,7 @@ console.log(sentence.toLowerCase());
 
 // 4.
  numArray=[1,2,3,4,5,6,7,8];
-
-  console.log(i);
+ console.log(i);
 
 console.log(numArray.filter((even) => even%2===0));
 // console.log(numArray.filter((odd)=> odd % 2 !==0));
@@ -49,6 +48,11 @@ console.log(getCurrencySymbolFromCode('USD'));
 
 // console.log(cat);
 const objectArray=[{name:'gio'}, {name:'natia'},{name:'milana'}]
-console.log(getUserByName(objectArray,'natia'));
 
+function getUserByName(users,name){
+  return users.find(function(user){
+    return user.name===name
+  })
+}
+console.log(getUserByName(objectArray, 'natia'));
 
